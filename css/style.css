@@ -3378,7 +3378,7 @@
     display: inline-block;
     margin: 10px 0px 20px;
     background-color: rgb(255, 196, 0);
-    font-size: 13px;
+    font-size: 12px;
   }
   .c5_slide .c5_slideWrap .c5_slider .c5_txt p {
     font-size: 14px;
@@ -3758,7 +3758,8 @@
   .tabContents {
     margin-top: 30px;
     width: 100%;
-    height: 1245px;
+    height: 1480px;
+
     position: relative;
     box-sizing: border-box;
   }
