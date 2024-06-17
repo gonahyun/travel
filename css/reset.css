@@ -1,0 +1,205 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+img {
+  display: block;
+}
+
+html {
+  /* 메인컬러 */
+  --main-color-red: #d90416;
+
+  /* 텍스트 */
+  --main-text-color: #222;
+  --text-color-white: #fff;
+  --text-color-gray: #909090;
+  --point-color-red: #ff0000;
+
+  /* 배경 */
+  --bg-color-gray: #f2f2f2;
+}
+
+body {
+  color: #222;
+  font-family: "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
+  word-break: keep-all;
+}
+
+/* font */
+/* font-family: "Black Han Sans", sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+/* font-family: "Nunito", sans-serif; */
+
+/* ================ header ================ */
+/* header {
+  max-width: 1500px;
+  margin: 30px auto 10px;
+  padding: 0px 50px;
+  box-sizing: border-box;
+  align-items: center;
+}
+header .header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+header .header > div:nth-child(1) {
+  width: 250px;
+}
+header .header .logo h1 {
+  width: 100%;
+}
+header .header .logo h1 img {
+  width: 200px;
+} */
+
+/* header search */
+/* header .header > div:nth-child(2) {
+  width: 300px;
+}
+header .search {
+  position: relative;
+  border-bottom: 2px solid #333;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+header .search input {
+  width: 270px;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  text-indent: 10px;
+  outline-style: none;
+}
+header .search i {
+  font-size: 20px;
+} */
+/* header .h-icon */
+/* header .header > div:nth-child(3) {
+  flex: 1;
+  align-self: flex-end;
+}
+header .h-icon {
+  width: 500px;
+}
+header .h-icon ul {
+  display: flex;
+
+  justify-content: flex-end;
+}
+header .h-icon ul li {
+  margin-left: 20px;
+}
+header .h-icon ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .h-icon ul li a i {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+header .h-icon ul li a label {
+  font-size: 14px;
+}
+header .header i:hover {
+  color: var(--main-color-red);
+} */
+
+/* h-navi */
+/* header .h-navi {
+  margin: 20px 0px 0px;
+}
+header .h-navi .navi {
+  display: flex;
+}
+header .h-navi .navi li {
+  margin-right: 50px;
+  padding: 10px 0px;
+}
+header .h-navi .navi li a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+header .h-navi .navi li a:hover {
+  color: var(--main-color-red);
+}
+header .h-navi .navi li:nth-child(1) a::before,
+header .h-navi .navi li:nth-child(3) a::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: -2px;
+  right: -10px;
+  border-radius: 10px;
+  background-color: var(--main-color-red);
+} */
+
+/* ================ footer ================ */
+
+/* footer {
+  width: 100vw;
+  background-color: var(--bg-color-gray);
+}
+footer #footer {
+  padding: 50px 20px;
+  max-width: 1500px;
+  margin: auto;
+  box-sizing: border-box;
+}
+#footer > ul {
+  justify-content: space-between;
+  display: flex;
+  margin: auto;
+}
+
+#footer > ul > li:nth-child(1) {
+  width: 250px;
+  background-image: url(../img/logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#footer > ul > li:nth-child(2) ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #555;
+}
+#footer > ul > li:nth-child(2) ul li {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+#footer > ul > li:nth-child(2) p {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 30px;
+  color: #555;
+}
+#footer > ul > li:nth-child(3) ul {
+  display: flex;
+  gap: 20px;
+}
+
+#footer > ul > li:nth-child(3) ul li a {
+  font-size: 30px;
+  color: #555;
+}
+#footer > ul > li:nth-child(3) ul li a:hover {
+  color: var(--main-color-red);
+} */
