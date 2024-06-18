@@ -87,6 +87,22 @@ $(document).ready(function () {
 
   $(window).on("scroll", animateCon2);
 
+  // Con3
+  function onScroll() {
+    let con3 = $("#con3");
+    let con3Position = con3.offset().top;
+    let screenPosition = $(window).scrollTop() + $(window).height();
+
+    if (con3Position < screenPosition) {
+      con3.find("h3").addClass("animate");
+      con3.find(".tab .tabMenu").addClass("animate");
+      con3.find(".tabContents").addClass("animate");
+      $(window).off("scroll", onScroll);
+    }
+  }
+
+  $(window).on("scroll", onScroll);
+
   // Con4
   let con4 = $("#con4");
   let con4Items = con4.find(".c4_wrap .grid-container .item");
