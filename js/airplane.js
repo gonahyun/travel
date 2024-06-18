@@ -20,10 +20,7 @@ $(document).ready(function () {
   ];
 
   sliders.forEach((slider, i) => {
-    let isDragStart = false,
-      isDragging = false,
-      isSlide = false,
-      prevPageX,
+    let isSlide = false,
       prevScrollLeft,
       positionDiff;
 
@@ -73,41 +70,31 @@ $(document).ready(function () {
         positionDiff > slideWidth / 5 ? valDifference : -positionDiff;
     }
 
-    function dragStart(e) {
-      if (isSlide) return;
-      isSlide = true;
-      isDragStart = true;
-      prevPageX = e.pageX || e.touches[0].pageX;
-      prevScrollLeft = slider.scrollLeft;
-      setTimeout(function () {
-        isSlide = false;
-      }, 700);
-    }
-
-    function dragging(e) {
-      if (!isDragStart) return;
-      e.preventDefault();
-      isDragging = true;
-      slider.classList.add("dragging");
-      positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-      slider.scrollLeft = prevScrollLeft - positionDiff;
-    }
-
-    function dragStop() {
-      isDragStart = false;
-      slider.classList.remove("dragging");
-      if (!isDragging) return;
-      isDragging = false;
-      autoSlide();
-    }
-
     addEventListener("resize", autoSlide);
-    slider.addEventListener("mousedown", dragStart);
-    slider.addEventListener("touchstart", dragStart);
-    slider.addEventListener("mousemove", dragging);
-    slider.addEventListener("touchmove", dragging);
-    slider.addEventListener("mouseup", dragStop);
-    slider.addEventListener("touchend", dragStop);
-    slider.addEventListener("mouseleave", dragStop);
+  });
+
+  // Visual
+  let visual = $("#visual");
+  visual.find(".v_wrap .v-txt h2").addClass("animate");
+  visual.find(".v_wrap .v-txt p").addClass("animate");
+  visual.find(".search").addClass("animate");
+
+  $("#visual .check").click(function () {
+    $(this).toggleClass("on");
+  });
+
+  // Con1
+  let con1 = $("#con1");
+  let con1Banner = con1.find(".banner .banner-txt");
+  let con1Li2 = con1.find(".banner ul li:nth-child(2)");
+
+  $(window).on("scroll", function () {
+    let con1Position = con1.offset().top;
+    let screenPosition = $(window).scrollTop() + $(window).height();
+
+    if (con1Position < screenPosition) {
+      con1Banner.addClass("animate-slideFromLeft");
+      con1Li2.addClass("animate-slideFromRight");
+    }
   });
 });
