@@ -1741,7 +1741,7 @@ header .header > div:nth-child(2) {
   /* ================ container ================ */
   /* ================ con1 ================ */
   #con1 {
-    width: 100vw;
+    /* width: 100vw; */
     height: 200px;
     margin: 100px auto;
     box-sizing: border-box;
@@ -1968,7 +1968,7 @@ header .header > div:nth-child(2) {
   /* ================ con3 ================ */
   #con3 {
     width: 100vw;
-    margin: 100px 0px;
+    margin: 100px auto;
     padding: 0px 30px;
     box-sizing: border-box;
   }
@@ -2075,7 +2075,7 @@ header .header > div:nth-child(2) {
 
   /* ================ con4 ================ */
   #con4 {
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0px auto 100px;
     box-sizing: border-box;
   }
@@ -2228,7 +2228,7 @@ header .header > div:nth-child(2) {
 
   /* ======footer====== */
   footer {
-    width: 100vw;
+    /* width: 100vw; */
     background-color: var(--bg-color-gray);
   }
   footer #footer {
