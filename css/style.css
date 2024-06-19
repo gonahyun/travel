@@ -3584,7 +3584,6 @@
     border-radius: 10px;
     background-color: var(--main-color-red);
   }
-
   /* ================ visual ================ */
   #visual {
     width: 100%;
@@ -3758,7 +3757,7 @@
   .tabContents {
     margin-top: 30px;
     width: 100%;
-    height: 1480px;
+    height: 1340px;
 
     position: relative;
     box-sizing: border-box;
@@ -4297,7 +4296,7 @@
 
   /* ======footer====== */
   footer {
-    width: 100vw;
+    /* width: 100vw; */
     background-color: var(--bg-color-gray);
   }
   footer #footer {
