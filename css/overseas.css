@@ -744,6 +744,7 @@
     color: var(--main-color-red);
   }
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1450px) {
   /* ================ header ================ */
   header {
@@ -1516,6 +1517,7 @@
     color: var(--main-color-red);
   }
 }
+
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   /* ================ header ================ */
   header {
@@ -2088,6 +2090,7 @@
   .tabContents.animate {
     animation-delay: 1.4s;
   }
+
   /*================== con4 =================*/
   #con4 {
     width: 100vw;
@@ -2284,6 +2287,7 @@
     color: var(--main-color-red);
   }
 }
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   header {
     background-color: #fff;
