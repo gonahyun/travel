@@ -1065,7 +1065,7 @@
   /* ================ con2 ================ */
   #con2 {
     width: 100vw;
-    margin: 100px 0px 150px;
+    margin: 100px auto 150px;
     padding: 0px 30px;
     box-sizing: border-box;
   }
@@ -1455,7 +1455,7 @@
 
   /* ======footer====== */
   footer {
-    width: 100vw;
+    /* width: 100vw; */
     background-color: var(--bg-color-gray);
   }
   footer #footer {

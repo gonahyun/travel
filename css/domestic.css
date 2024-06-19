@@ -1199,7 +1199,7 @@ header .header > div:nth-child(2) {
   /* ================ con3 ================ */
   #con3 {
     width: 100vw;
-    margin: 150px 0px;
+    margin: 150px auto;
     padding: 0px 30px;
     box-sizing: border-box;
   }
@@ -1456,7 +1456,7 @@ header .header > div:nth-child(2) {
   }
   /* ======footer====== */
   footer {
-    width: 100vw;
+    /* width: 100vw; */
     background-color: var(--bg-color-gray);
   }
   footer #footer {
@@ -2034,7 +2034,7 @@ header .header > div:nth-child(2) {
     transition: opacity 0.5s, transform 2s;
   }
   #con3 .c3_wrap ul li:nth-child(2),
-  #con3 .c3_wrapp ul li:nth-child(4) {
+  #con3 .c3_wrap ul li:nth-child(4) {
     opacity: 0;
     transform: translateX(50%);
     transition: opacity 0.5s, transform 2s;
