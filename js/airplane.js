@@ -1,13 +1,13 @@
 $(document).ready(function () {
-  $("dt[data-accordion-con='area1']").click(function () {
-    // Hide all dd elements
-    $("dd[data-accordion-con='area2']").hide();
+  $("li[data-accordion-con='area1']").click(function () {
+    // Hide all li[data-accordion-con='area2'] elements
+    $("li[data-accordion-con='area2']").hide();
 
-    // Show the corresponding dd element
-    $(this).next("dd[data-accordion-con='area2']").toggle();
+    // Show the corresponding li[data-accordion-con='area2'] element
+    $(this).next("li[data-accordion-con='area2']").toggle();
 
-    // Toggle the 'open' class on dt elements
-    $("dt[data-accordion-con='area1']").removeClass("open");
+    // Toggle the 'open' class on li[data-accordion-con='area1'] elements
+    $("li[data-accordion-con='area1']").removeClass("open");
     $(this).toggleClass("open");
   });
 
